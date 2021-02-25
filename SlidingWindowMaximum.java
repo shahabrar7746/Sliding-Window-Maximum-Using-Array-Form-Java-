@@ -9,8 +9,7 @@ public class SlidingWindowMaximum {
 		
 		Scanner sc = new Scanner(System.in);
 	// ArrayList<Integer> a = new ArrayList();
-		int n = sc.nextInt();
-		int a[] = new int[n];
+		int a[] = new int[6];
 		System.out.println("give values");
 		for(int i = 0;i<a.length;i++) {
 			a[i] = sc.nextInt();
