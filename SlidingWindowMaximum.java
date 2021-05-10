@@ -8,24 +8,26 @@ public class SlidingWindowMaximum {
 		System.out.println("how much numbers will u give");
 		
 		Scanner sc = new Scanner(System.in);
-	// ArrayList<Integer> a = new ArrayList();
-		int a[] = new int[6];
+	//Link :- https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+		int array[] = new int[6];
 		System.out.println("give values");
-		for(int i = 0;i<a.length;i++) {
-			a[i] = sc.nextInt();
+		//This loop will take inputs for array
+		for(int i = 0;i<array.length;i++) {
+			array[i] = sc.nextInt();
 		}
-		for(int i = 0;i+2<a.length;i++) {
-			if(a[i] < a[i+1]) {
-				if(a[i+1] < a[i+2]) {
-					System.out.print(a[i+2] + " ");
+		//This will do our job 
+		for(int i = 0;i+2<array.length;i++) {
+			if(array[i] < array[i+1]) {
+				if(array[i+1] < array[i+2]) {
+					System.out.print(array[i+2] + " ");
 				}else {
-					System.out.print(a[i+1]+ " ");
+					System.out.print(array[i+1]+ " ");
 				}
 			}else {
-				if(a[i] < a[i+2]) {
-					System.out.print(a[i+2]+ " ");
+				if(array[i] < array[i+2]) {
+					System.out.print(array[i+2]+ " ");
 				}else {
-					System.out.print(a[i]+ " ");
+					System.out.print(array[i]+ " ");
 				}
 			}
 		}
